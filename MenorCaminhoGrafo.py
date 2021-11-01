@@ -144,7 +144,6 @@ class Grafo():
 
     # Calcula menor caminho entre 2 vértices
     def menor_caminho(self, v_inicial, v_final):
-        D = g.dijkstra(v_inicial)
         print(
             f"#-- Vertices ({v_inicial})--({v_final}) , Menor distância = {D[v_final]}, Percurso = {self.D_Caminhos[v_final]} --#")
 
