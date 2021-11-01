@@ -132,7 +132,6 @@ class Grafo():
         return
 
     def imprimir_distancias(self, v_inicial):
-        D = g.dijkstra(v_inicial)
         g.tabela()
         # Imprimir melhores percursos:
         m = PrettyTable(["Vértices", "Menores Distâncias", "Percurso"])
@@ -183,6 +182,7 @@ i = int(
     input("Imprimir todas as distâncias(Digite 1) ou o menor caminho(Digite 2):"))
 if i == 1:
     v = int(input("A partir de qual vertice: "))
+    D = g.dijkstra(v)
     g.imprimir_distancias(v)
 elif i == 2:
     vi = int(input("Vertice inicial: "))
